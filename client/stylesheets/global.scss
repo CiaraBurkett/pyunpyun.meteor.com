@@ -3,3 +3,58 @@
 @import "bitters/bitters";
 @import "variables";
 @import "mixins";
+
+// Color Variables
+$red: #C43B44;
+$orange: #C45941;
+$brown: #B86F37;
+$green: #A0B839;
+$lemon: #C4BB35;
+$vanilla: #FFF5DB;
+$gray: #444444;
+$offwhite: #FAF4E6;
+
+// Global
+body {
+    background-color: white;
+    color: $gray;
+    margin: 0;
+}
+// Header
+header {
+    background-color: $red;
+    color: $offwhite;
+    width: 100%;
+    .inner {
+        @include outer-container;
+        .logo {
+            @include span-columns(3);
+        }
+        nav {
+            @include span-columns(9);
+            text-align: right;
+            ul
+                li {
+                    display: inline-block;
+                    margin-right: 50px;
+                    a {
+                        color: $offwhite;
+                    }
+                }
+        }
+    }
+}
+
+// Main
+.main {
+    min-height: 800px;
+}
+// Footer
+footer {
+    background-color: $green;
+    color: $offwhite;
+    width: 100%;
+    .inner {
+        @include outer-container;
+    }
+}
