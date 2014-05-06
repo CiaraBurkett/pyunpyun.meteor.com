@@ -16,7 +16,7 @@ $offwhite: #FAF4E6;
 
 // Global
 body {
-    background-color: white;
+    background-color: $offwhite;
     color: $gray;
     margin: 0;
 }
@@ -27,6 +27,7 @@ header {
     width: 100%;
     .inner {
         @include outer-container;
+        padding: 25px 0 25px 0;
         .logo {
             @include span-columns(3);
         }
@@ -47,6 +48,7 @@ header {
 
 // Main
 .main {
+    @include outer-container;
     min-height: 800px;
 }
 // Footer
