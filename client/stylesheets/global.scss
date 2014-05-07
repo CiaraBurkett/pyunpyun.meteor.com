@@ -59,6 +59,9 @@ header {
 .main {
     @include outer-container;
     min-height: 800px;
+    .hero {
+        text-align: center;
+    }
 }
 // Footer
 footer {
