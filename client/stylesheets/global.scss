@@ -14,16 +14,23 @@ $vanilla: #FFF5DB;
 $gray: #444444;
 $offwhite: #FAF4E6;
 
+// Font Variables
+$roboto: 'Roboto', sans-serif;
+
 // Global
 body {
-    background-color: $offwhite;
+    background-color: white;
     color: $gray;
+    font-family: $roboto;
     margin: 0;
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $roboto;
+    }
 }
 // Header
 header {
     background-color: $red;
-    color: $offwhite;
+    color: white;
     width: 100%;
     .inner {
         @include outer-container;
@@ -34,14 +41,16 @@ header {
         nav {
             @include span-columns(9);
             text-align: right;
-            ul
+            ul {
+                float: right;
                 li {
                     display: inline-block;
                     margin-right: 50px;
                     a {
-                        color: $offwhite;
+                        color: white;
                     }
                 }
+            }
         }
     }
 }
@@ -54,7 +63,7 @@ header {
 // Footer
 footer {
     background-color: $green;
-    color: $offwhite;
+    color: white;
     width: 100%;
     .inner {
         @include outer-container;
