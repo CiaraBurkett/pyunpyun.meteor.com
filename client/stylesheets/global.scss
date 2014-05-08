@@ -171,11 +171,23 @@ footer {
         .left {
             @include span-columns(6);
             text-align: center;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 25px;
+                }
+            }
         }
         .right {
             @include span-columns(6);
             @include omega();
             text-align: center;
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 25px;
+                }
+            }
         }
         .bottom {
             @include span-columns(12);
