@@ -9,6 +9,7 @@ $cosmos: #2A242B;
 $blue: #3F9DBA;
 $dullpurple: #5F4C4C;
 $lightdull: #DDD2D3;
+$yellow: #FFD66C;
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;
@@ -41,6 +42,7 @@ header {
             h1 {
                 font-style: italic;
                 i {
+                    color: $yellow;
                     font-size: 200%;
                     vertical-align: middle;
                 }
@@ -67,6 +69,7 @@ header {
 // Main
 .main {
     @include outer-container;
+    margin-top: 50px;
     min-height: 800px;
     .hero {
         @include span-columns(12);
@@ -83,6 +86,12 @@ header {
         }
         a {
             color: $blue;
+        }
+        button {
+            margin-top: 25px;
+            a {
+                color: white;
+            }
         }
     }
     .widget {
