@@ -6,10 +6,14 @@
 
 // Color Variables
 $cosmos: #2A242B;
+$pitch: #151216;
 $blue: #3F9DBA;
 $dullpurple: #5F4C4C;
 $lightdull: #DDD2D3;
 $yellow: #FFD66C;
+$orange: #D94436;
+$darkfuscia: #A3005C;
+$blandmauve: #725A5A;
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;
@@ -25,6 +29,7 @@ body {
     font-weight: 300;
     margin: 0;
     h1, h2, h3, h4, h5, h6 {
+        color: $orange;
         font-family: $condensed;
         // font-family: $roboto;
     }
@@ -57,8 +62,15 @@ header {
                     display: inline-block;
                     margin-right: 50px;
                     text-transform: uppercase;
+                    :hover {
+                        background-color: $pitch;
+                    }
+                    :last-child {
+                        margin-right: 0;
+                    }
                     a {
                         color: $lightdull;
+                        padding: 10px;
                     }
                 }
             }
@@ -111,6 +123,7 @@ header {
                 text-align: left;
             }
             i {
+                color: $blandmauve;
                 font-size: 64px;
             }
         }
