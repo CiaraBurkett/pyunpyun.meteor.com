@@ -12,7 +12,8 @@ $lightdull: #DDD2D3;
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;
-
+$condensed: 'Roboto Condensed', sans-serif;
+$slab: 'Roboto Slab', serif;
 // Media Queries
 
 // Global
@@ -23,7 +24,8 @@ body {
     font-weight: 300;
     margin: 0;
     h1, h2, h3, h4, h5, h6 {
-        font-family: $roboto;
+        font-family: $condensed;
+        // font-family: $roboto;
     }
 }
 // Header
@@ -74,7 +76,6 @@ header {
         padding: 36px;
         text-align: center;
         h3 {
-            font-family: 'Roboto Condensed';
             margin-bottom: 24px;
         }
         p {
