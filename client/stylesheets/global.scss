@@ -5,23 +5,22 @@
 @import "mixins";
 
 // Color Variables
-$red: #C43B44;
-$orange: #C45941;
-$brown: #B86F37;
-$green: #A0B839;
-$lemon: #C4BB35;
-$vanilla: #FFF5DB;
-$gray: #444444;
-$offwhite: #FAF4E6;
+$cosmos: #2A242B;
+$blue: #3F9DBA;
+$dullpurple: #5F4C4C;
+$lightdull: #DDD2D3;
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;
 
+// Media Queries
+
 // Global
 body {
-    background-color: white;
-    color: $gray;
+    background-color: $cosmos;
+    color: $lightdull;
     font-family: $roboto;
+    font-weight: 300;
     margin: 0;
     h1, h2, h3, h4, h5, h6 {
         font-family: $roboto;
@@ -29,14 +28,21 @@ body {
 }
 // Header
 header {
-    background-color: $red;
-    color: white;
+    background-color: $cosmos;
+    height: 100px;
     width: 100%;
     .inner {
         @include outer-container;
         padding: 25px 0 25px 0;
         .logo {
             @include span-columns(3);
+            h1 {
+                font-style: italic;
+                i {
+                    font-size: 200%;
+                    vertical-align: middle;
+                }
+            }
         }
         nav {
             @include span-columns(9);
@@ -46,8 +52,9 @@ header {
                 li {
                     display: inline-block;
                     margin-right: 50px;
+                    text-transform: uppercase;
                     a {
-                        color: white;
+                        color: $lightdull;
                     }
                 }
             }
@@ -60,15 +67,75 @@ header {
     @include outer-container;
     min-height: 800px;
     .hero {
+        @include span-columns(12);
+        background-color: $cosmos;
+        font-size: 150%;
+        margin: 50px 0 50px 0;
+        padding: 36px;
         text-align: center;
+        h3 {
+            font-family: 'Roboto Condensed';
+            margin-bottom: 24px;
+        }
+        p {
+            line-height: 36px;
+        }
+        a {
+            color: $blue;
+        }
+    }
+    .widget {
+        .block {
+            @include span-columns(4);
+            background-color: $cosmos;
+            display: inline-block;
+            font-size: 125%;
+            min-height: 275px;
+            padding: 20px;
+            text-align: center;
+            h4 {
+                margin-bottom: 30px;
+            }
+            p {
+                line-height: 30px;
+                text-align: left;
+            }
+            i {
+                font-size: 64px;
+            }
+        }
     }
 }
 // Footer
 footer {
-    background-color: $green;
-    color: white;
+    background-color: $cosmos;
     width: 100%;
+    hr {
+        width: 50%;
+    }
     .inner {
         @include outer-container;
+        line-height: 24px;
+        h5 {
+            margin-bottom: 15px;
+        }
+        a {
+            color: $dullpurple;
+        }
+        .left {
+            @include span-columns(6);
+            text-align: center;
+        }
+        .right {
+            @include span-columns(6);
+            @include omega();
+            text-align: center;
+        }
+        .bottom {
+            @include span-columns(12);
+            color: $dullpurple;
+            font-size: 85%;
+            text-align: center;
+        }
     }
 }
