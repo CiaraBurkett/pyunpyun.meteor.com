@@ -25,16 +25,28 @@ $slab: 'Roboto Slab', serif;
 // Media Queries
 
 // Global
+html {
+    height: 100%;
+}
 body {
     background-color: $cosmos;
     color: $lightdull;
     font-family: $roboto;
     font-weight: 300;
+    height: 100%;
     margin: 0;
     h1, h2, h3, h4, h5, h6 {
         color: $orange;
         font-family: $condensed;
-        // font-family: $roboto;
+    }
+}
+.container {
+    margin-bottom: -173px;
+    min-height: 100%;
+    &:after {
+        content: "";
+        display: block;
+        height: 173px;
     }
 }
 // Header
@@ -65,15 +77,18 @@ header {
                     display: inline-block;
                     margin-right: 50px;
                     text-transform: uppercase;
-                    :hover {
+                    &:hover {
                         background-color: $darkcosmos;
                     }
-                    :last-child {
+                    &:last-child {
                         margin-right: 0;
                     }
                     a {
                         color: $lightbland;
                         padding: 10px;
+                        &:hover {
+                            color: $lightdull;
+                        }
                     }
                 }
             }
@@ -85,7 +100,7 @@ header {
 .main {
     @include outer-container;
     margin-top: 50px;
-    min-height: 800px;
+    min-height: 750px;
     .hero {
         @include span-columns(12);
         background-color: $darkcosmos;
@@ -136,6 +151,9 @@ header {
 // Footer
 footer {
     background-color: $cosmos;
+    height: 173px;
+    position: relative;
+    bottom: -173px;
     width: 100%;
     hr {
         width: 50%;
