@@ -3,4 +3,7 @@ Router.map ->
         path: "/"
 
     @route "dashboard"
+    @route "about"
+    @route "games"
+    @route "contact"
     return
