@@ -25,6 +25,10 @@ $slab: 'Roboto Slab', serif;
 // Media Queries
 
 // Global
+::selection {
+    background-color: $orange;
+    color: white;
+}
 html {
     height: 100%;
 }
