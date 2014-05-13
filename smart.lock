@@ -18,8 +18,8 @@
     "packages": {
       "scss": {
         "git": "https://github.com/fourseven/meteor-scss.git",
-        "tag": "v0.8.4",
-        "commit": "11af0da643944d241fe7d173af76162c4b670dee"
+        "tag": "v0.8.7",
+        "commit": "d085b7272eacc20866abff61b25c915a22ddbcf4"
       },
       "bourbon": {
         "git": "https://github.com/chicagogrooves/meteor-bourbon.git",
@@ -83,8 +83,8 @@
       },
       "paginated-subscription": {
         "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
-        "tag": "v0.2.1",
-        "commit": "f44d171badcc2e6f87c752580be16c955cdb3bb8"
+        "tag": "v0.2.2",
+        "commit": "2133a2163575f569f90253f81314f21b2bf08d20"
       },
       "accounts-t9n": {
         "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
