@@ -5,6 +5,7 @@ Router.map ->
     @route "dashboard"
     @route "about"
     @route "games"
-    @route "games/first"
+    @route "first",
+        path: "/games/first"
     @route "contact"
     return
