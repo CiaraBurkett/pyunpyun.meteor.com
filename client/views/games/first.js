@@ -4,10 +4,10 @@ Template.first.first = function() {
     var game = new Phaser.Game(800, 600, Phaser.AUTO, 'first', {preload: preload, create: create, update: update});
 
     function preload() {
-        game.load.image('sky', '../public/img/tutorial/sky.png');
-        game.load.image('ground', '../public/img/tutorial/ground.png');
-        game.load.image('star', '../public/img/tutorial/star.png');
-        game.load.spritesheet('dude', '../public/img/tutorial/dude.png', 32, 48);
+        game.load.image('sky', '/img/tutorial/sky.png');
+        game.load.image('ground', '/img/tutorial/ground.png');
+        game.load.image('star', '/img/tutorial/star.png');
+        game.load.spritesheet('dude', '/img/tutorial/dude.png', 32, 48);
     }
 
     function create() {
